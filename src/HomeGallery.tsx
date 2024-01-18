@@ -1,17 +1,34 @@
-import Images from "./Images";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Gallery: React.FC = () => {
   return (
-    <div className="m-10 flex h-auto w-80 flex-col rounded-lg border-2 border-black">
-      {Images.map((image, index) => (
-        <div key={index}>
-          <img
-            className="rounded-md"
-            src={image.src}
-            alt={`Gallery item ${index}`}
-          />
-        </div>
-      ))}
+    <div className="w-img m-20 flex h-auto">
+      <Carousel>
+        <CarouselContent>
+          <CarouselItem>
+            <img
+              className="rounded-xl"
+              src="./assets/Hair1.jpg"
+              alt="blonde highlights"
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              className="rounded-xl"
+              src="./assets/Hair1Alt.jpg"
+              alt="blonde highlights profile"
+            />
+          </CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
     </div>
   );
 };
