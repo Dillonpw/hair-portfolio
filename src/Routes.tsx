@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import About from "./About";
-import Gallery from "./Gallery";
 import Contact from "./Contact";
 
 const Routes: React.FC = () => {
@@ -16,7 +15,6 @@ const Routes: React.FC = () => {
           <ReactRoutes>
             <Route path="/" element={<App />} />
             <Route path="about" element={<About />} />
-            <Route path="gallery" element={<Gallery />} />
             <Route path="contact" element={<Contact />} />
           </ReactRoutes>
         </Router>

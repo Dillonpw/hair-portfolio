@@ -1,6 +1,6 @@
 import Header from "./Header";
 import HomeGallery from "./HomeGallery";
-import Footer from "./Footer";
+import Footer from "./FooterComponent";
 
 const App: React.FC = () => {
   return (
