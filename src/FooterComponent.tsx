@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="fixed bottom-0 text-white flex h-16 w-full items-center justify-center bg-gray-800 px-4 md:px-6">
+    <footer className="absolute bottom-0 text-white flex h-16 w-full items-center justify-center bg-gray-800 px-4 md:px-6">
       <div className="flex gap-4">
         <a href="#">
           <span className="">Facebook</span>

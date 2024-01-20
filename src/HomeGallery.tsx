@@ -8,7 +8,7 @@ import {
 
 const Gallery: React.FC = () => {
   return (
-    <div className="w-img m-20 flex h-auto">
+    <div className="w-img m-20 flex h-auto fade-in-right">
       <Carousel>
         <CarouselContent>
           <CarouselItem>
@@ -26,7 +26,7 @@ const Gallery: React.FC = () => {
             />
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious />
+        <CarouselPrevious/>
         <CarouselNext />
       </Carousel>
     </div>
